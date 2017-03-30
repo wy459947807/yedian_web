@@ -257,7 +257,7 @@ function wechatLogin(userData, noAuth) {
     }).catch(error => alert(error.msg || error.message || "加载失败"));
 }
 
-Vue.http.get((process.env.NODE_ENV !== "production" ? "http://dev-yedian.chinacloudapp.cn" : location.origin) + "/app/jsbaseinfo")
+Vue.http.get((process.env.NODE_ENV !== "production" ? "http://yddev.ye-dian.com" : location.origin) + "/app/jsbaseinfo")
 .then(response => response.json())
 .then(function(data) {
     if (data.result === 0) {
